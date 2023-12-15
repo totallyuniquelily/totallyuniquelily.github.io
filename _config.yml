@@ -1,4 +1,5 @@
 title: Lily's homepage
 description: Nothing yet
-remote_theme: "godalming123/minimal"
-color-scheme: auto-default-dark
+remote_theme: abhinavs/moonwalk
+theme_config:
+  appearance: "dark"
