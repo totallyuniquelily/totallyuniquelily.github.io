@@ -1,7 +1,0 @@
----
----
-@mixin colors_override {
-  --clr-a-text: hsl(327, 100%, var(--L-a-text));
-}
-
-@import "{{ site.theme }}";
