@@ -1,5 +1,19 @@
 title: Lily's homepage
+author: totallyuniquelily
+url: https://totallyuniquelily.github.io
 description: Nothing yet
+
+permalink: /:slug
+
 remote_theme: abhinavs/moonwalk
 theme_config:
   appearance: "dark"
+  back_home_text: "home"
+  date_format: "%Y-%m-%d"
+
+  show_blog: true
+
+highlighter: rouge
+
+plugins:
+  - jekyll-feed
