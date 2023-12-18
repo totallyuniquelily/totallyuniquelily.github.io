@@ -13,7 +13,24 @@ theme_config:
 
   show_blog: true
 
-highlighter: rouge
 
+# Display drafts
+collections:
+  drafts: 
+    output: true
+    permalink: /:slug
+defaults:
+  - scope:
+      path: ""
+      type: drafts
+    values:
+      comments: false
+      share: false
+      related: false
+      sitemap: false  #To hide from sitemap.xml
+      noindex: true   #To hide from robots and crawlers
+
+
+highlighter: rouge
 plugins:
   - jekyll-feed
