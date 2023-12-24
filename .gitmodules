@@ -1,0 +1,3 @@
+[submodule "assets/bqn-80-embed"]
+	path = assets/bqn-80-embed
+	url = https://github.com/totallyuniquelily/bqn-80-embed.git
