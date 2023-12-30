@@ -34,7 +34,7 @@ This version runs `•math.Sin` on a whole 136‿240 sized matrix (240x136, the 
 
 You can see that version [here](https://dancek.github.io/bqn-80/#c=YyDihpAgOOKAvzfigL824oC/NQpkIOKGkCAw4oC/NjDigL8yMDDigL8xMDAKd2F2ZSDihpAg4oyKKDIww5cyK+KAom1hdGguU2luIM+Aw5cxMjDDt8uc4oaVMjQwKQpEcmF3V2F2ZSDihpAge+KNiT4o4p+oMeKfqeKKuCgvy5wpwqjwnZWpKSDCq8KoIDzLmOKNiTEzNuKAvyjiiaDwnZWpKeKlijB9CmN3YXZlcyDihpAgY8OXKOKJoGMpL+KLiCDijYlEcmF3V2F2ZSB3YXZlCmNvbWJpbmVkIOKGkCB78J2VqCvwnZWpw5cwPfCdlah9wrQg4o2JwqggKGQpIOKMvcKoIGN3YXZlcwp78J2VqCDijL3LmCBjb21iaW5lZH0=).
 
-(You may note one difference in behavior from that version: the pixels at the top of the wave are gone.
+(You may notice one difference in behavior from that version: the pixels at the top of the wave are gone.
 This an (in part) intentional change.
 The newer version would have a similar 1-pixel wave extremum but at the bottom, the `.06` in `×5.06+•math.Sin` is responsible for removing that (it nudges the waves down by a tiny amount).)
 
