@@ -34,6 +34,8 @@ This version runs `•math.Sin` on a whole 136‿240 sized matrix (240x136, the 
 
 You can see that version [here](https://dancek.github.io/bqn-80/#c=YyDihpAgOOKAvzfigL824oC/NQpkIOKGkCAw4oC/NjDigL8yMDDigL8xMDAKd2F2ZSDihpAg4oyKKDIww5cyK+KAom1hdGguU2luIM+Aw5cxMjDDt8uc4oaVMjQwKQpEcmF3V2F2ZSDihpAge+KNiT4o4p+oMeKfqeKKuCgvy5wpwqjwnZWpKSDCq8KoIDzLmOKNiTEzNuKAvyjiiaDwnZWpKeKlijB9CmN3YXZlcyDihpAgY8OXKOKJoGMpL+KLiCDijYlEcmF3V2F2ZSB3YXZlCmNvbWJpbmVkIOKGkCB78J2VqCvwnZWpw5cwPfCdlah9wrQg4o2JwqggKGQpIOKMvcKoIGN3YXZlcwp78J2VqCDijL3LmCBjb21iaW5lZH0=).
 
+(I also made variants that randomize the waves' offsets, rather than hard-coding them and letting you choose. Links to both versions: [small](https://dancek.github.io/bqn-80/#c=Y+KGkDjigL834oC/NuKAvzUKZOKGkCjiiaBjKeKAonJhbmQuUmFuZ2UgMjQwCmNvbWJpbmVk4oaQe/Cdlagr8J2VqcOXMD3wnZWofcK04o2Jwqhk4oy9wqhjw5co4omgYykv4ouI4o2Jeyg+4oqPwqjwnZWpKT4yMMOXNS4wNivigKJtYXRoLlNpbj7PgMOXMTIww7fLnDHiio/CqPCdlal94oaVMTM24oC/MjQwCnvwnZWo4oy9y5hjb21iaW5lZH0=) and [original](https://dancek.github.io/bqn-80/#c=YyDihpAgOOKAvzfigL824oC/NQpkIOKGkCAo4omgYykg4oCicmFuZC5SYW5nZSAyNDAKd2F2ZSDihpAg4oyKKDIww5cyK+KAom1hdGguU2luIM+Aw5cxMjDDt8uc4oaVMjQwKQpEcmF3V2F2ZSDihpAge+KNiT4o4p+oMeKfqeKKuCgvy5wpwqjwnZWpKSDCq8KoIDzLmOKNiTEzNuKAvyjiiaDwnZWpKeKlijB9CmN3YXZlcyDihpAgY8OXKOKJoGMpL+KLiCDijYlEcmF3V2F2ZSB3YXZlCmNvbWJpbmVkIOKGkCB78J2VqCvwnZWpw5cwPfCdlah9wrQg4o2JwqggKGQpIOKMvcKoIGN3YXZlcwp78J2VqCDijL3LmCBjb21iaW5lZH0=).)
+
 <!-- writeup more here -->
 
 ## Lines
