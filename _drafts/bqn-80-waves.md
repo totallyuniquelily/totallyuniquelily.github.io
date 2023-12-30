@@ -85,17 +85,5 @@ base ← (⊢×15<|) (××10+|) -⟜68 ⊑¨↕136‿240
 The "l‿h" in this one is used to only keep the bottom and top 60 pixels.
 The middle part was really flashy so I remove it.
 
-<!--
-original waves:
-
-{% include bqn-80.html code="c ← 8‿7‿6‿5
-d ← 0‿60‿200‿100
-wave ← ⌊(20×2+•math.Sin π×120÷˜↕240)
-DrawWave ← {⍉>(⟨1⟩⊸(/˜)¨𝕩) «¨ <˘⍉136‿(≠𝕩)⥊0}
-cwaves ← c×(≠c)/⋈ ⍉DrawWave wave
-combined ← {𝕨+𝕩×0=𝕨}´ ⍉¨ (d) ⌽¨ cwaves
-{𝕨 ⌽˘ combined}"%}
--->
-
 <script src="assets/bqn-80-embed/bqn.js"></script>
 <script src="assets/bqn-80-embed/bqn-80.js"></script>
