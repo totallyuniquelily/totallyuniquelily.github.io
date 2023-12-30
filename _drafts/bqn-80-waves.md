@@ -27,7 +27,7 @@ As you can see, this is kinda code-golfed.
 I unfortunately do not have a fully spelled out version, as I changed the algorithm used to generate the rotated (`⌽`) image in the process of "minifying" my code.
 This version runs `•math.Sin` on a whole 136‿240 sized matrix (240x136, the screen dimensions). The previous/original version would:
 
-- run •math.Sin math.Sin on the x coordinate
+- run •math.Sin on the x coordinate
 - generate a list of 1s (truths) with length equal to each result (producing a list of lists)
 - extend each of these lists with 0s (falses) so their lengths equal display height
 - create a matrix from those lists of lists
