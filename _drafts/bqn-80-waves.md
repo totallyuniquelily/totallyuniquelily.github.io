@@ -18,9 +18,21 @@ combined←{𝕨+𝕩×0=𝕨}´⍉¨d⌽¨c×(≠c)/⋈⍉{(>⊏¨𝕩)>20×5.0
 
 If you run it on BQN-80 <!-- editor mention ---> you can configure it!:
 
-- `c` and `d` must have the same length
 - `c` colors for the waves, consisting of palette indices (0-15)
 - `d` offsets for the waves
+
+note that `c` and `d` must have the same length.
+
+As you can see, this is kinda code-golfed.
+I unfortunately do not have a fully spelled out version, as I changed the algorithm used to generate the rotated (`⌽`) image in the process of "minifying" my code.
+This version runs `•math.Sin` on a whole 136‿240 sized matrix (240x136, the screen dimensions). The previous/original version would:
+
+- run •math.Sin math.Sin on the x coordinate
+- generate a list of 1s (truths) with length equal to each result (producing a list of lists)
+- extend each of these lists with 0s (falses) so their lengths equal display height
+- create a matrix from those lists of lists
+
+You can see that version [here](https://dancek.github.io/bqn-80/#c=YyDihpAgOOKAvzfigL824oC/NQpkIOKGkCAw4oC/NjDigL8yMDDigL8xMDAKd2F2ZSDihpAg4oyKKDIww5cyK+KAom1hdGguU2luIM+Aw5cxMjDDt8uc4oaVMjQwKQpEcmF3V2F2ZSDihpAge+KNiT4o4p+oMeKfqeKKuCgvy5wpwqjwnZWpKSDCq8KoIDzLmOKNiTEzNuKAvyjiiaDwnZWpKeKlijB9CmN3YXZlcyDihpAgY8OXKOKJoGMpL+KLiCDijYlEcmF3V2F2ZSB3YXZlCmNvbWJpbmVkIOKGkCB78J2VqCvwnZWpw5cwPfCdlah9wrQg4o2JwqggKGQpIOKMvcKoIGN3YXZlcwp78J2VqCDijL3LmCBjb21iaW5lZH0=).
 
 <!-- writeup more here -->
 
