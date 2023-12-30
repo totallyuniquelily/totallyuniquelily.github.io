@@ -82,8 +82,7 @@ base ← (⊢×15<|) (××10+|) -⟜68 ⊑¨↕136‿240
 # 0¨⌾(l↓h↓⊢)
 {|𝕨÷base}" %}
 
-The "l‿h" in this one is used to only keep the bottom and top 60 pixels.
-The middle part was really flashy so I remove it.
+The "l‿h" in this one is used to only keep the bottom and top 60 pixels, since the (excluded) middle part was really flashy.
 
 <script src="assets/bqn-80-embed/bqn.js"></script>
 <script src="assets/bqn-80-embed/bqn-80.js"></script>
