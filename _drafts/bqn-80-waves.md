@@ -76,7 +76,6 @@ to:
 
 ## Forwards
 
-(EPILEPSY WARNING: this animation start to flash a lot after you let it run for a while)
 {% include bqn-80.html code="l‿h ← (-⋈⊢)60
 base ← (⊢×15<|) (××10+|) -⟜68 ⊑¨↕136‿240
 {|𝕨÷base}" %}
