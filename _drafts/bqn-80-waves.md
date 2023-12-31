@@ -79,7 +79,6 @@ to:
 (EPILEPSY WARNING: this animation start to flash a lot after you let it run for a while)
 {% include bqn-80.html code="l‿h ← (-⋈⊢)60
 base ← (⊢×15<|) (××10+|) -⟜68 ⊑¨↕136‿240
-# 0¨⌾(l↓h↓⊢)
 {|𝕨÷base}" %}
 
 The "l‿h" in this one is used to only keep the bottom and top 60 pixels, since the (excluded) middle part flashed a lot.
