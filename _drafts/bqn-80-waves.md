@@ -7,7 +7,7 @@ From BQN-80's [official site](https://dancek.github.io/bqn-80/):
 > BQN-80 is an experimental fantasy sizecoding platform inspired by [TIC-80](https://tic80.com/). \
 > This is a very early alpha version. 
 
-Yeah it allows you to make animations in BQN. So I made ~~one~~ some!
+Yeah it allows you to make animations in BQN. So I made some!
 Here's the first one (you'll have to press RUN!):
 
 ## Waves/Mountains
@@ -21,7 +21,7 @@ If you run it on BQN-80 <!-- editor mention ---> you can configure it!:
 - `c` colors for the waves, consisting of palette indices (0-15)
 - `d` offsets for the waves
 
-note that `c` and `d` must have the same length.
+note that `c` and `d` must have the same length, and are separated by ⋈ in the assignment.
 
 As you can see, this is kinda code-golfed.
 I unfortunately do not have a fully spelled out version, as I changed the algorithm used to generate the rotated (`⌽`) image in the process of "minifying" my code.
@@ -76,13 +76,13 @@ to:
 
 ## Forwards
 
-(EPILEPSY WARNING: this animation can still get pretty "flashy" after you let it run for a while)
+(EPILEPSY WARNING: this animation start to flash a lot after you let it run for a while)
 {% include bqn-80.html code="l‿h ← (-⋈⊢)60
 base ← (⊢×15<|) (××10+|) -⟜68 ⊑¨↕136‿240
 # 0¨⌾(l↓h↓⊢)
 {|𝕨÷base}" %}
 
-The "l‿h" in this one is used to only keep the bottom and top 60 pixels, since the (excluded) middle part was really flashy.
+The "l‿h" in this one is used to only keep the bottom and top 60 pixels, since the (excluded) middle part flashed a lot.
 
 <script src="assets/bqn-80-embed/bqn.js"></script>
 <script src="assets/bqn-80-embed/bqn-80.js"></script>
