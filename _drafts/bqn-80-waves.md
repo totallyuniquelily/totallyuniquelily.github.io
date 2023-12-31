@@ -65,7 +65,7 @@ r ← ri⊏valid_rs # one of: ⟨ 1 2 3 5 6 10 15 30 ⟩
 {p ← ⌊𝕨÷(t×r) ⋄ m ← r|⌊𝕨÷t
 (diag×↕136)⌽˘ 136‿240⥊p+m⌽r/↕8}" %}
 
-Originally I intended `diag` to be a boolean (0 or 1), but it *turned out* to work with different values too, so I noted that in the comment, and changed the way diag is implemented, from:
+Originally I intended `diag` to be a boolean (0 or 1), but it *turned out* to work with different values too, so I noted that in the comment, and changed the way diag is implemented to improve performance. I changed it from:
 
   repeat "shift each row by one" `diag` times `((↕136)⌽˘⍟diag)`
   (intended to be 0 or 1 times)
