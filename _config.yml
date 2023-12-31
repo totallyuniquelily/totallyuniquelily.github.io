@@ -5,6 +5,8 @@ description: Nothing yet
 
 permalink: /:slug
 
+favicon: "./favicon.png"
+
 remote_theme: abhinavs/moonwalk
 theme_config:
   appearance: "dark"
