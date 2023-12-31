@@ -21,13 +21,13 @@ If you run it on BQN-80 <!-- editor mention ---> you can configure it!:
 - `c` colors for the waves, consisting of palette indices (0-15)
 - `d` offsets for the waves
 
-note that `c` and `d` must have the same length, and are separated by ⋈ in the assignment.
+note that `c` and `d` must have the same length, and are separated by `⋈` in the assignment.
 
 As you can see, this is kinda code-golfed.
 I unfortunately do not have a fully spelled out version, as I changed the algorithm used to generate the rotated (`⌽`) image in the process of "minifying" my code.
 This version runs `•math.Sin` on a whole 136‿240 sized matrix (240x136, the screen dimensions). The previous/original version would:
 
-- run •math.Sin on the x coordinate
+- run `•math.Sin` on the x coordinate
 - generate a list of 1s (truths) with length equal to each result (producing a list of lists)
 - extend each of these lists with 0s (falses) so their lengths equal display height
 - create a matrix from those lists of lists
@@ -36,7 +36,7 @@ You can see that version [here](https://dancek.github.io/bqn-80/#c=YyDihpAgOOKAv
 
 (You may notice one difference in behavior from that version: the pixels at the top of the wave are gone.
 This an (in part) intentional change.
-The newer version would have a similar 1-pixel wave extremum but at the bottom, the `.06` in `×5.06+•math.Sin` is responsible for removing that (it nudges the waves down by a tiny amount).)
+The newer version would have a similar 1-pixel wave extremum but at the bottom, the `.06` in `×5.06+•math.Sin` is responsible for removing that (it nudges the waves up by a tiny amount).)
 
 (side-note: the minified version originally ended with `{𝕨⌽˘combined}`, but as a minor, and useless, optimisation I changed it to `{0‿𝕨⌽combined}`. This way, `⌽` is ran once, rather than for every row in the matrix.
 This did add one character of course.)
@@ -65,7 +65,7 @@ r ← ri⊏valid_rs # one of: ⟨ 1 2 3 5 6 10 15 30 ⟩
 {p ← ⌊𝕨÷(t×r) ⋄ m ← r|⌊𝕨÷t
 (diag×↕136)⌽˘ 136‿240⥊p+m⌽r/↕8}" %}
 
-Originally I intended `diag` to be a boolean (0 or 1), but it *turned out* to work with different values too, so I noted that in the comment, and changed the way diag is implemented to improve performance. I changed it from:
+Originally I intended `diag` to be a boolean (0 or 1), but it *turned out* to work with different values too, so I noted that in the comment, and changed the way `diag` is implemented to improve performance. I changed it from:
 
   repeat "shift each row by one" `diag` times `((↕136)⌽˘⍟diag)`
   (intended to be 0 or 1 times)
